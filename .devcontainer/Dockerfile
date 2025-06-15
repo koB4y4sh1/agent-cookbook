@@ -22,7 +22,7 @@ RUN uv sync
 
 COPY . .
 
-# 権限を vscode ユーザーに変更
-RUN chown -R vscode:vscode /workspace
+# コピーしつつ所有者をvscode ユーザーに指定することで権限付与
+COPY --chown=vscode:vscode . .
 
 USER vscode

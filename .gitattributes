@@ -1,0 +1,24 @@
+# すべてのテキストファイルは LF に統一（改行コードの差異をなくす）
+* text=auto eol=lf
+
+# バイナリファイルは Git にテキスト変換させない
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.pptx binary
+*.zip binary
+
+# UTF-8 に固定したいファイル（必要に応じて）
+*.py text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.toml text eol=lf
+*.lock text eol=lf

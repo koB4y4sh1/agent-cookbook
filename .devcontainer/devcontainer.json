@@ -17,5 +17,6 @@
       }
     },
     "forwardPorts": [8888, 7860],
+    "postCreateCommand": "/bin/bash -c 'source .env && git config --global user.name \"$GIT_USER_NAME\" && git config --global user.email \"$GIT_USER_EMAIL\"'",
     "remoteUser": "vscode"
   }
