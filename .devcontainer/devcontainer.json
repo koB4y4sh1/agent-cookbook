@@ -1,0 +1,21 @@
+{
+    "name": "ai-agent-cookbook",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": ".."
+    },
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.shell.linux": "/bin/bash"
+        },
+        "extensions": [
+          "ms-python.python",
+          "ms-toolsai.jupyter",
+          "ms-azuretools.vscode-docker"
+        ]
+      }
+    },
+    "forwardPorts": [8888, 7860],
+    "remoteUser": "vscode"
+  }
