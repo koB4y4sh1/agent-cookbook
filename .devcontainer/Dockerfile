@@ -17,10 +17,7 @@ WORKDIR /workspace
 # pyproject.toml を先にコピー（Dockerキャッシュのため）
 COPY pyproject.toml .
 
-# パッケージのインストール（必要ならここで入れてもよい）
 RUN uv sync
-
-COPY . .
 
 # コピーしつつ所有者をvscode ユーザーに指定することで権限付与
 COPY --chown=vscode:vscode . .

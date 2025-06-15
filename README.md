@@ -25,18 +25,15 @@ LLMベースのエージェント技術（LangChain / Semantic Kernel / MCP）�
    - 自作ツール・メモリのテスト
 
 ## 🛠️ セットアップ手順（推奨: Dev Container）
-``` powershell
-# uvのインストール　https://docs.astral.sh/uv/getting-started/installation/
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
-powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/0.7.13/install.ps1 | iex"
-```
-
 ```bash
 # 初回セットアップ
 git clone https://github.com/your-org/ai-agent-cookbook.git
 cd ai-agent-cookbook
 cp .env.example .env
-uv venv
-. .venv/scripts/activate
+```
+
+devcontainer起動
+```bash
+# 起動後パッケージインストール
 uv sync
 ```

@@ -1,0 +1,10 @@
+# Python仮想環境を除外
+.venv/
+venv/
+uv.lock
+
+# その他ビルドに不要なファイル・フォルダ
+__pycache__/
+*.pyc
+node_modules/
+.DS_Store
