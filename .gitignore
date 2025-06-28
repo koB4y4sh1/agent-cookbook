@@ -133,9 +133,6 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 
-# VSCode settings
-.vscode/
-
 # Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
